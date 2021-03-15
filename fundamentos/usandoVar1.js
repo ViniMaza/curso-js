@@ -1,3 +1,4 @@
+// VAR é global
 {
     {
         {
@@ -7,11 +8,11 @@
     }
 }
 
-console.log(sera)
+console.log(sera) // imprime o resultado
 
 function teste(){
     var local = 123
 }
 
 teste()
-// console.log(local)
+// console.log(local) // não imprime o resultado 
