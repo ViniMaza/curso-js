@@ -19,3 +19,8 @@ console.log(`${filha2.nome} tem cabelo ${filha2.corCabelo}`)
 console.log(Object.keys(filha1))
 console.log(Object.keys(filha2))
 
+for(let key in filha2){ // todos os atributos sendo impressos
+    console.log(key)
+    filha2.hasOwnProperty(key) ? // se a propriedade pertence a ela
+        console.log(key) : console.log(`Por herança: ${key}`)
+}
